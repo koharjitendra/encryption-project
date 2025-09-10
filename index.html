@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Encryption/Decryption</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Custom Encrypt / Decrypt</h2>
+
+    <!-- Input message or ciphertext -->
+    <label for="inputMsg">Message / Ciphertext:</label>
+    <textarea id="inputMsg" rows="4" placeholder="Type your message or ciphertext here..."></textarea>
+
+    <!-- Key input -->
+    <label for="keyInput">Key (number):</label>
+    <input id="keyInput" type="number" placeholder="Enter secret key">
+
+    <!-- Output -->
+    <label for="outputMsg">Output:</label>
+    <textarea id="outputMsg" rows="4" readonly></textarea>
+
+    <!-- Buttons -->
+    <div class="btn-group">
+      <button onclick="encrypt()">Encrypt</button>
+      <button onclick="decrypt()">Decrypt</button>
+      <button onclick="resetAll()">Reset</button>
+      <button onclick="copyOutput()">Copy Output</button>
+    </div>
+
+    <!-- Status message -->
+    <p id="status"></p>
+  </div>
+
+  <!-- Link JS -->
+  <script src="script.js"></script>
+</body>
+</html>
